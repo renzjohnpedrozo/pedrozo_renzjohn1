@@ -109,16 +109,25 @@
       box-shadow: 0 0 15px rgba(255, 0, 0, 0.7);
       transform: translateY(-2px);
     }
-    .btn-secondary {
-      background: #222;
-      border: none;
-      color: #eee;
+
+    /* Neon Back Button */
+    .btn-back {
+      display: inline-block;
+      padding: 10px 18px;
+      background: #111;
+      color: #ff3333;
+      border: 2px solid #ff1a1a;
       border-radius: 6px;
-      padding: 10px 20px;
-      transition: all 0.3s ease;
+      font-weight: bold;
+      text-decoration: none;
+      text-transform: uppercase;
+      box-shadow: 0 0 12px #ff0000;
+      transition: all 0.3s;
     }
-    .btn-secondary:hover {
-      background: #333;
+    .btn-back:hover {
+      background: #ff0000;
+      color: #fff;
+      box-shadow: 0 0 20px #ff0000;
       transform: translateY(-2px);
     }
 
@@ -163,7 +172,7 @@
       </div>
       <div class="d-flex justify-content-between">
         <button type="submit" class="btn btn-primary">✅ Create User</button>
-        <a href="/" class="btn btn-secondary">↩ Back</a>
+        <a href="<?= site_url('users'); ?>" class="btn-back">↩ Back</a>
       </div>
     </form>
   </div>
